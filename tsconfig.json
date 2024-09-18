@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "outDir": "./dist/tsc",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // "experimentalDecorators": true,
+    // "emitDecoratorMetadata": true,
+
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts"]
+}

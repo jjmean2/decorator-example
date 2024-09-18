@@ -1,4 +1,29 @@
 {
   "name": "my-decorator-app",
-  "packageManager": "yarn@4.2.2"
+  "packageManager": "yarn@4.5.0",
+  "scripts": {
+    "build:swc": "swc src --strip-leading-paths -d dist/swc",
+    "start:swc:js": "node dist/swc/appJs.js",
+    "start:swc:ts": "node dist/swc/appTs.js",
+    "build:tsc": "tsc",
+    "start:tsc:js": "node dist/tsc/appJs.js",
+    "start:tsc:ts": "node dist/tsc/appTs.js",
+    "build:babel": "babel src --out-dir dist/babel",
+    "start:babel:js": "node dist/babel/appJs.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.6",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@swc/cli": "^0.4.1-nightly.20240914",
+    "@swc/core": "^1.7.26",
+    "@swc/helpers": "^0.5.13",
+    "@types/babel__preset-env": "^7",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.24.7",
+    "core-js": "3"
+  }
 }

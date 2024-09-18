@@ -1,0 +1,20 @@
+{
+  "$schema": "https://swc.rs/schema.json",
+  "test": ".(j)sx?$",
+  "jsc": {
+    "target": "es5",
+    "externalHelpers": true,
+    "parser": {
+      "syntax": "typescript",
+      "decorators": true,
+      "decoratorsBeforeExport": true
+    },
+    "transform": {
+      "decoratorVersion": "2022-03"
+    }
+  },
+  "module": {
+    "type": "commonjs"
+  },
+  "minify": false
+}
